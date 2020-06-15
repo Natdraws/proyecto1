@@ -10,16 +10,24 @@
             input[type=password] {
                 background-color: #32c95b;
 			}
+            @media print {
+                .solo-pantalla {
+                    display: none        
+				}     
+			}
         </style>
     </head>
     <body>
-        <h1 align="center"><img src="logo.png" width="250px"><h1> <input name="User" type="text" placeholder="ID de Usuario"> <input name="password" type="password" placeholder="Contraseña">
-        <h1>Esto es un <a href="https://es.wikipedia.org/wiki/Test">test</a></h1>
-        <a href="test2.html">Dale aqui para acabar el test</a>
+        <div>
+           <h1 class="solo-pantalla" align="center"><img src="logo.png" width="250px"><h1>
+           <a href="login.html"><h1 align="center">Login</h1></a>
+        </div>
+        <h1 class="solo-pantalla">Esto es un <a href="https://es.wikipedia.org/wiki/Test">test</a></h1>
+        <a href="test2.html" class="solo-pantalla">Dale aqui para acabar el test </a>
 
-        <div style="border-image: initial; border: ridge #000000 2px;">
-        <h1 style="color:black">Contenidos</h1>
-        <ul>
+        <div style="border-image: initial; border: ridge #000000 2px;" class="solo-pantalla">
+        <h1 style="color:black" class="solo-pantalla">Contenidos</h1>
+        <ul class="solo-pantalla">
             <li><a href="#section1" style="color:black">Beneficios</a></li>
             <li><a href="#section2" style="color:black">Contras</a></li>
             <li><a href="#section3" style="color:black">Otros proyectos en los que he trabajado</a></li>
@@ -29,25 +37,27 @@
 
 
 
-        <h1 id="section1">Beneficios</h1>
-        <h2>Haciendo este test ayudas a esta pagina web al darle click al link de "esto es un test" ya que confirmas que funciona el link.</h2>
+        <h1 id="section1" class="solo-pantalla">Beneficios</h1>
+        <h2 class="solo-pantalla">Haciendo este test ayudas a esta pagina web al darle click al link de "esto es un test" ya que confirmas que funciona el link.</h2>
         <br/>
         <br/>
         <br/>
         <br/>
         <br/>
         <br/>
-        <h1 id="section2">Contras</h1>
-        <h2>La verdad, no se que decir si hay contras, el unico contra que hay es que gastas un click del raton y 5 segundos de tu tiempo.</h2>
+        <h1 id="section2" class="solo-pantalla">Contras</h1>
+        <h2 class="solo-pantalla">La verdad, no se que decir si hay contras, el unico contra que hay es que gastas un click del raton y 5 segundos de tu tiempo.</h2>
         <br/>
         <br/>
         <br/>
         <br/>
         <br/>
         <br/>
-        <h1 id="section3">Otros proyectos en los que he trabajado:</h1>
-        <a href="https://natdraws.github.io/proyecto0/hola.html" style="color:#318387">Proyecto 0</a>
+        <h1 id="section3" class="solo-pantalla">Otros proyectos en los que he trabajado:</h1>
+        <a href="https://natdraws.github.io/proyecto0/hola.html" style="color:#318387" class="solo-pantalla">Proyecto 0</a>
         <br/>
-        <h6 align="center">&#169;2020 natdraws.github.io</h6>
+        <br/>
+        <br/>
+        <h6 align="center" class="solo-pantalla">&#169;2020 natdraws.github.io</h6>
     </body>
 </html>
